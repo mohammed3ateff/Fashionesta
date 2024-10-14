@@ -48,11 +48,11 @@ export default function Products() {
             >
               <img
                 className=" w-full object-cover duration-[0.3s] hover:scale-105"
-                src={product.thumb}
+                src={product.image}
                 alt="product image"
               />
               <span className="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">
-                {product.price / 25}% OFF
+                {Math.round((200 / (product.price + 200)) * 100)}% OFF
               </span>
             </Link>
             <div className="mt-4 px-5 pb-5 ">

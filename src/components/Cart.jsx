@@ -36,12 +36,12 @@ export default function Cart() {
               >
                 <div className="md:w-4/12 2xl:w-1/4 w-full">
                   <img
-                    src={product.thumb}
+                    src={product.image}
                     alt={product.name}
                     className="h-full object-center object-cover md:block hidden"
                   />
                   <img
-                    src={product.thumb}
+                    src={product.image}
                     alt={product.name}
                     className="md:hidden w-full h-full object-center object-cover"
                   />

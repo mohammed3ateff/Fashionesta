@@ -3,14 +3,11 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const fetchCategories = createAsyncThunk(
   "categoriesSlice/fetchCategories",
   async () => {
-    const res = await fetch(
-      "https://api.easy-orders.net/api/v1/external-apps/categories",
-      {
-        headers: {
-          "Api-Key": "3807b462-a905-455f-93c2-43ceb58774cd",
-        },
-      }
-    );
+    const res = await fetch("https://fakestoreapi.com/products/categories", {
+      headers: {
+        "Api-Key": "3807b462-a905-455f-93c2-43ceb58774cd",
+      },
+    });
     const data = await res.json();
     return data;
   }

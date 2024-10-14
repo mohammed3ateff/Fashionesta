@@ -41,7 +41,7 @@ export default function ProductDetails() {
             <div className="h-[460px] rounded-lg bg-gray-300 mb-4">
               <img
                 className="w-full h-full object-cover"
-                src={productDetails.thumb}
+                src={productDetails.image}
                 alt="Product Image"
               />
             </div>

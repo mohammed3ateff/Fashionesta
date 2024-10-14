@@ -5,7 +5,7 @@ export const fetchProducts = createAsyncThunk(
   async (category) => {
     console.log("fetching products");
     console.log(category);
-    let url = "https://api.easy-orders.net/api/v1/external-apps/products";
+    let url = "https://fakestoreapi.com/products";
     if (category) {
       url += `?category_id=${category}`;
     }
